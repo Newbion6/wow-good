@@ -27,10 +27,6 @@ import Type.ValueType;
 import Controls;
 import DialogueBoxPsych;
 
-#if desktop
-import Discord;
-#end
-
 using StringTools;
 
 class EditorLua {
