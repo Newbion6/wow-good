@@ -18,7 +18,7 @@ class DiscordClient
 	public function new()
 	{
 		trace("Discord Client starting...");
-		DiscordRpc.start({
+		//DiscordRpc.start({
 			clientID: "863222024192262205",
 			onReady: onReady,
 			onError: onError,
@@ -28,24 +28,24 @@ class DiscordClient
 
 		while (true)
 		{
-			DiscordRpc.process();
+			//DiscordRpc.process();
 			#if sys
 			sleep(2);
 			#end
 			//trace("Discord Client Update");
 		}
 
-		DiscordRpc.shutdown();
+		//DiscordRpc.shutdown();
 	}
 	
 	public static function shutdown()
 	{
-		DiscordRpc.shutdown();
+		//DiscordRpc.shutdown();
 	}
 	
 	static function onReady()
 	{
-		DiscordRpc.presence({
+		//DiscordRpc.presence({
 			details: "In the Menus",
 			state: null,
 			largeImageKey: 'icon',
@@ -82,7 +82,7 @@ class DiscordClient
 			endTimestamp = startTimestamp + endTimestamp;
 		}
 
-		DiscordRpc.presence({
+		//DiscordRpc.presence({
 			details: details,
 			state: state,
 			largeImageKey: 'icon',
