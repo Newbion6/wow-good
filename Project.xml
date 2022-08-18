@@ -45,7 +45,6 @@
 
 	<classpath name="source" />
 	
-	<assets path="assets/android"/>
 	<assets path="assets/shared/images/hitbox"/>
 
 	<!-- PSYCH ENGINE CUSTOMIZATION -->
