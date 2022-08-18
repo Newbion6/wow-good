@@ -39,12 +39,7 @@ class DiscordClient
 	
 	static function onReady()
 	{
-		//DiscordRpc.presence({
-			details: "In the Menus",
-			state: null,
-			largeImageKey: 'icon',
-			largeImageText: "Psych Engine"
-		});
+		//DiscordRpc.presence
 	}
 
 	static function onError(_code:Int, _message:String)
